@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello from Flask</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-3.1.1-dist/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-3.1.1-dist/css/bootstrap-theme.min.css') }}"/>
+</head>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello World!</h1>
+{% endif %}
+<a class="btn btn-default">hi</a>
+
+<script src="{{url_for('static', filename='bootstrap-3.1.1-dist/js/bootstrap.min.js') }}"></script>
+
+</html>
